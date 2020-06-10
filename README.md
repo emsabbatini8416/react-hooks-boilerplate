@@ -21,10 +21,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Installing
 
-1) ``` nvm install node 12.18.0
-2) ``` git clone [Git Repository]
-3) Enter to repo root and run ``` npm install
-4) ``` npm run start
+1) ``` nvm install node 12.18.0 ```
+2) ``` git clone [Git Repository] ```
+3) Enter to repo root and run ``` npm install ```
+4) ``` npm run start ```
 5) Browser http:///localhost:3000
 
 ## Testing
