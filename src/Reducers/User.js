@@ -5,7 +5,7 @@ const initialState = {
   
   const user = (state = initialState, action) => {
     switch (action.type) {
-      case 'UPDATE_LOGIN_STATUS':
+      case 'LOGIN':
         return {
           ...state,
           isLogged: action.value,

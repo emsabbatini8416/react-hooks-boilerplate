@@ -28,5 +28,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 5) Browser http:///localhost:3000
 
 ## Testing
-1) Unit Testing => Jest
-2) E2E Testing: Cypress (framework) (https://www.cypress.io/)
+1) Unit Testing => Jest and Enzyme (https://enzymejs.github.io/enzyme/)
+2) E2E Testing: Cypress (https://www.cypress.io/)

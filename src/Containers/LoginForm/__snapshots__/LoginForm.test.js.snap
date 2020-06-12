@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginForm component tests should have a LogIn btn component 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <LoginForm>
+    <div
+      className="login-form"
+    >
+      <div
+        className="login-form_container"
+      >
+        <div
+          className="row justify-content-center align-items-center"
+        >
+          <div
+            className="col-md-6"
+          >
+            <div
+              className="col-md-12"
+            >
+              <form
+                className="form"
+                onSubmit={[Function]}
+              >
+                <h3>
+                  Login
+                </h3>
+                <div
+                  className="form-group"
+                >
+                  <LabelInput
+                    errors={Object {}}
+                    label="Username"
+                    name="username"
+                    register={[Function]}
+                    type="text"
+                  >
+                    <label
+                      htmlFor="username"
+                    >
+                      Username
+                    </label>
+                    <br />
+                    <input
+                      className="form-control"
+                      name="username"
+                      type="text"
+                    />
+                  </LabelInput>
+                </div>
+                <div
+                  className="form-group"
+                >
+                  <LabelInput
+                    errors={Object {}}
+                    label="Password"
+                    name="password"
+                    register={[Function]}
+                    type="password"
+                  >
+                    <label
+                      htmlFor="password"
+                    >
+                      Password
+                    </label>
+                    <br />
+                    <input
+                      className="form-control"
+                      name="password"
+                      type="password"
+                    />
+                  </LabelInput>
+                </div>
+                <div
+                  className="form-group"
+                >
+                  <input
+                    className="btn login-form_container--btn"
+                    id="btnLogIn"
+                    name="submit"
+                    type="submit"
+                    value="LogIn"
+                  />
+                  <input
+                    className="btn"
+                    id="btnSignUp"
+                    name="signup"
+                    onClick={[Function]}
+                    type="button"
+                    value="SignUp"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </LoginForm>
+</Provider>
+`;

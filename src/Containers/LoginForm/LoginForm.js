@@ -49,8 +49,8 @@ export function LoginForm() {
                   />
                 </div>
                 <div className="form-group">
-                    <input type="submit" name="submit" className="btn login-form_container--btn" value="Submit" />
-                    <input type="button" name="signup" className="btn" onClick={() => history.push('/signup')} value="Sign Up" />
+                    <input id="btnLogIn" type="submit" name="submit" className="btn login-form_container--btn" value="LogIn" />
+                    <input id="btnSignUp" type="button" name="signup" className="btn" onClick={() => history.push('/signup')} value="SignUp" />
                 </div>
               </form>
             </div>
