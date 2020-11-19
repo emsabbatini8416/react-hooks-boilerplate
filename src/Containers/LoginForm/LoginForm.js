@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 
 import LabelInput from './../../Components/LabelInput'
 
-import { loginToken } from './../../Actions/Users'
+import { login } from './../../Actions/Users'
 
 import './LoginForm.scss';
 
@@ -15,7 +15,7 @@ export function LoginForm() {
   const history = useHistory();
 
   const onSubmit = data => {
-    dispatch(loginToken(data));
+    dispatch(login(data));
   };
 
   return (

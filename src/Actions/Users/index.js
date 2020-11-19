@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const BASE_URL = `https://sandbox.bitex.la/api`
+const BASE_URL = ``
 const COOKIE = '';
-const API_KEY = 'c7aaed0233eb4998a7d3278c42fd7048a884174f00a7d18fa93a7f9b5ba732b56f5f8fd23c253479';
+const API_KEY = '';
 
 export const LOGIN = 'LOGIN';
 export const SET_USER = 'SET_USER';
@@ -21,43 +21,10 @@ export const setUser = (data) => {
     }
 }
 
-export const loginToken = ({ username, password }) => {
+export const login = ({ username, password }) => {
     return dispatch => {
-      return axios.post(`${BASE_URL}/users/login`, {
-            data: {
-                type: "sessions", 
-                attributes: { 
-                    email: username,
-                    password: password 
-                }
-            },
-            included:[]
-        }, {
-            headers: { 'Authorization': `${API_KEY}` },
-        })
-        .then(response => {
-            dispatch(setLogin(response));
-        })
-        .catch(error => {
-          throw(error);
-        })
-    }
-}
+      return axios.post(`${BASE_URL}/`, {
 
-export const loginCookie = ({ username, password }) => {
-    return dispatch => {
-      return axios.post(`${BASE_URL}/users/login`, {
-            data: {
-                type: "sessions", 
-                attributes: { 
-                    email: username,
-                    password: password 
-                }
-            },
-            included:[]
-        }, {
-            headers: { 'Cookie': `${COOKIE}` },
-            withCredentials: true
         })
         .then(response => {
             dispatch(setLogin(response));
@@ -71,18 +38,8 @@ export const loginCookie = ({ username, password }) => {
 export const signup = ({ email, password, password_confirmation}) => {
     debugger
     return dispatch => {
-        return axios.post(`${BASE_URL}/users/sign_up`, {
-              data: {
-                  type: "registrations", 
-                  attributes: { 
-                      email: email,
-                      password: password ,
-                      password_confirmation: password_confirmation 
-                  }
-              },
-              included:[]
-          }, {
-              headers: { 'Authorization': `${API_KEY}` },
+        return axios.post(`${BASE_URL}/`, {
+
           })
           .then(response => {
               debugger
